@@ -83,6 +83,10 @@ chrome/webkit auf und URL aufrufen
   - nipster (http://eirikb.github.com/nipster/)
 
 ## Das Ecosystem
+- express (sinatra like)
+- NODE_ENV=production
+- jade (handebar, underscorejs templating)
+- stylus (SASS like)
 
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?

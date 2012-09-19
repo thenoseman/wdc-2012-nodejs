@@ -1,0 +1,14 @@
+doctype 5
+html
+  head
+    title= title
+    script(src="/socket.io/socket.io.js")
+    script.
+      var socket = io.connect();
+      socket.on('news', function (data) {
+        alert(data);
+      });
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    a(onclick='socket.emit("news", { my: "data"});', href='#') SOCKET IO
+    block content

@@ -35,7 +35,16 @@ server.listen(5000);
 Nach jeder Dateiänderung muss der server neu gestartet werden!
 --> nodemon (https://github.com/remy/nodemon)
 
+node server sendet `Transfer-Encoding: chunked` -> streaming!
+Kein `Content-Length` Header.
+
+Client muss die response aktiv beenden (siehe frage 2)
+
+Im Web neu: Transport von websockets via GIF :) Für IE < 7 (https://github.com/videlalvaro/gifsockets)
+
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
   Er liegt in node.js -> sehr klein. Keine Probleme bekannt.
 
+- node.js server timeout -> wie lang?
+- debugging?

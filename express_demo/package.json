@@ -5,6 +5,7 @@
     "express": "3.0.0rc4",
     "jade": "*",
     "stylus": "*",
-    "ejs": "*"
+    "ejs": "*",
+    "socket.io"
   }
 }

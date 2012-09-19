@@ -87,12 +87,14 @@ chrome/webkit auf und URL aufrufen
 - NODE_ENV=production
 - jade (templateengine HAML like)
 - stylus (SASS like)
-- ejs (erb like abersowas von BÄH!)
+- ejs (erb like aber sowas von BÄH!)
 
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
   Er liegt in node.js -> sehr klein. Keine Probleme bekannt.
 
 - node.js server timeout -> wie lang?
+  - nicht wirklich definiert (wegeb streaming s.o.)
 
 - node.js LOAD_PATH (resolve circular references)?
+  - see http://www.bennadel.com/blog/2169-Where-Does-Node-js-And-Require-Look-For-Modules-.htm

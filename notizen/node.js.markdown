@@ -63,6 +63,18 @@ npm install -g node-inspector
 node-inspector ("visit http://0.0.0.0:8080/debug?port=5858 to start debugging")  
 chrome/webkit auf und URL aufrufen
 
+## Hosting:
+* Globale Fehlerbehandlung (Die app)
+  try {} catch {}
+* Prozess Neustart
+  z.B. node-forever (https://github.com/nodejitsu/forever)
+* Server Neustart / Dienst
+  Standard Unix vorgehen (upstart / etc/init.d)
+* Port-Sharing (Reverse Proxy)
+  nginx
+
+* managed Hosting: Heroku / Microsoft Ajure / nodejitsu
+
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
   Er liegt in node.js -> sehr klein. Keine Probleme bekannt.

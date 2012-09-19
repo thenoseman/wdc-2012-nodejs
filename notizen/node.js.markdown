@@ -42,9 +42,31 @@ Client muss die response aktiv beenden (siehe frage 2)
 
 Im Web neu: Transport von websockets via GIF :) Für IE < 7 (https://github.com/videlalvaro/gifsockets)
 
+## Package Management
+npm (wird mit node ausgeliefert)  
+npm install packagename -g -> global  
+npm install wenn ein package.json existiert -> wie bundle  
+npm init -> erstellt package.json    
+
+require('./core.js') -> lokal in diesem Verzeichnis / mit file extension  
+require('core') -> node_modules oder stdlib  
+
+## Debugging:
+node debug app.js  
+- step (into)
+- cont
+
+oder node --debug app.js  
+OHNE cli debugger
+
+npm install -g node-inspector  
+node-inspector ("visit http://0.0.0.0:8080/debug?port=5858 to start debugging")  
+chrome/webkit auf und URL aufrufen
+
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
   Er liegt in node.js -> sehr klein. Keine Probleme bekannt.
 
 - node.js server timeout -> wie lang?
 - debugging?
+- node.js LOAD_PATH (resolve circular references)?

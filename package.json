@@ -1,0 +1,16 @@
+{
+  "name": "wdc-2012-nodejs",
+  "version": "0.0.0",
+  "description": "wdc-2012-nodejs",
+  "main": "webapp.js",
+  "dependencies": {
+    "compare.js": "0.0.9"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenoseman/wdc-2012-nodejs.git"
+  },
+  "author": "",
+  "license": "BSD"
+}

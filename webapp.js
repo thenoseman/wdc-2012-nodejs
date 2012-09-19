@@ -1,10 +1,9 @@
-// HTTP Module laden
+// Module laden (stdlib oder node_modules)
 var http = require('http');
+var compare = require('compare.js');
 
-var server = http.createServer(function(req, res) {
-  res.writeHead(200, { "Content-Type": "text/html" } );
-  res.write("Hallo WDC!");
-  res.end();
-});
+// File System lokal:
+var core = require('./core.js');
+
+var server = http.createServer(core.processRequest);
 server.listen(5000);
-

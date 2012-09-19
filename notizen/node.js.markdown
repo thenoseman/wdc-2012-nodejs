@@ -75,10 +75,19 @@ chrome/webkit auf und URL aufrufen
 
 * managed Hosting: Heroku / Microsoft Ajure / nodejitsu
 
+## Packages finden/bewerten:
+- https://github.com/joyent/node/wiki/Modules
+- Zuverlässige Namen:
+  - https://github.com/visionmedia (TJ Hollowaychuk)
+  - nodejitsu Leute
+  - nipster (http://eirikb.github.com/nipster/)
+
+## Das Ecosystem
+
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
   Er liegt in node.js -> sehr klein. Keine Probleme bekannt.
 
 - node.js server timeout -> wie lang?
-- debugging?
+
 - node.js LOAD_PATH (resolve circular references)?

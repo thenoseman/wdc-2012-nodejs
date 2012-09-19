@@ -1,13 +1,13 @@
-
+'use strict';
 /**
  * Module dependencies.
  */
 
-var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
-  , http = require('http')
-  , path = require('path');
+var express = require('express');
+var routes = require('./routes');
+var user = require('./routes/user');
+var http = require('http');
+var path = require('path');
 
 var app = express();
 
@@ -22,7 +22,7 @@ app.configure(function(){
   app.use(express.cookieParser('your secret here'));
   app.use(express.session());
   app.use(app.router);
-  app.use(require('stylus').middleware(__dirname + '/public'));
+  app.use(require('stylus').middleware({dest : __dirname + '/public', src : __dirname + 'app/stylesheets'}));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 

@@ -14,6 +14,28 @@ fabricengine -> high computation javascript runtime
 - Kein javascriopt
 - fabricengine.com
 
+node versionierungsschema: 0.8.8 - gerade minor = stable, ungerade minor dev.
+node REPL: `node -i` oder `node`
+
+node ist erstmal kein Webserver zentriertes Produkt.
+Javascript JIT compiler von google -> v8. Seperat vom chrome browser
+node = v8 + apis zum filesystem usw.
+
+```
+// HTTP Module laden
+var http = require('http');
+
+var server = http.createServer(function(req, res) {
+  res.write("Hallo WDC!");
+  res.end();
+});
+server.listen(5000);
+```
+
+Nach jeder Dateiänderung muss der server neu gestartet werden!
+--> nodemon (https://github.com/remy/nodemon)
+
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
-  Er liegt in node.js -> sehr klein. Kein Problem.
+  Er liegt in node.js -> sehr klein. Keine Probleme bekannt.
+

@@ -85,8 +85,9 @@ chrome/webkit auf und URL aufrufen
 ## Das Ecosystem
 - express (sinatra like)
 - NODE_ENV=production
-- jade (handebar, underscorejs templating)
+- jade (templateengine HAML like)
 - stylus (SASS like)
+- ejs (erb like abersowas von BÄH!)
 
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?

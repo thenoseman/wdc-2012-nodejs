@@ -89,12 +89,29 @@ chrome/webkit auf und URL aufrufen
 - stylus (SASS like)
 - ejs (erb like aber sowas von BÄH!)
 
+## socket.io
+- nowjs.com -> framework für socket.io in node keine .emit() mehr.
+
+## DB
+- z.B. via mongoskin und mongolabcom
+
+## Desktopapps
+- appjs.org
+
+## Asset pipeline
+- http://epeli.github.com/piler/
+
+# authorization (omni-auth like)
+- http://passportjs.org/
+
 ## Fragen:
 - Wo liegt der Request-State in node zwischen den Events?
   Er liegt in node.js -> sehr klein. Keine Probleme bekannt.
 
 - node.js server timeout -> wie lang?
-  - nicht wirklich definiert (wegeb streaming s.o.)
+  nicht wirklich definiert (wegeb streaming s.o.)
 
 - node.js LOAD_PATH (resolve circular references)?
-  - see http://www.bennadel.com/blog/2169-Where-Does-Node-js-And-Require-Look-For-Modules-.htm
+  see http://www.bennadel.com/blog/2169-Where-Does-Node-js-And-Require-Look-For-Modules-.htm
+
+- dependency block: wie macht man "--mongo:native" in package.json
